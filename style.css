@@ -1,0 +1,134 @@
+/* Genel Stil Ayarları */
+body {
+    background-image: linear-gradient(to right, #000000, #000000); /* Gradient Arka Plan */
+    background-size: cover;
+    background-position: center;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+/* Konteyner (Tüm içerik için) */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.6); /* Yarı saydam arka plan */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Başlıklar */
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Kişisel Bilgiler ve Proje Amacı için stil */
+section {
+    margin-bottom: 30px;
+}
+
+/* Evreler için stil */
+.evre {
+    width: 100%;
+    max-width: 600px;    /* Resimlerin maksimum genişliği */
+    margin: 20px auto;   /* Yatayda ortalar */
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Resimlerin boyutlandırılması */
+img {
+    width: 100%;         /* Resmin genişliği %100 olacak */
+    height: auto;        /* Yükseklik orantılı olarak ayarlanır */
+    object-fit: contain; /* Resmin orantısını koruyarak boyutlandırır */
+    display: block;      /* Resmin altındaki boşluğu kaldırır */
+    margin: 0 auto;      /* Resmi yatayda ortalar */
+}
+
+/* Evre Başlıkları */
+.evre-header {
+    font-size: 1.8em;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Bilgi metni için stil */
+.info {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+/* Butonlar için stil */
+.btn-main {
+    background-color: #0000ff;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-main:hover {
+    background-color: #ff0000;
+}
+
+/* Responsive Tasarım (Mobil Uyumluluk) */
+@media (max-width: 768px) {
+    /* Mobilde container genişliği %95 olacak */
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    /* Resimler daha küçük ekranlarda %100 genişliğe sahip olacak */
+    .evre {
+        max-width: 100%;
+    }
+
+    /* Başlık boyutlarını küçültüyoruz */
+    h2 {
+        font-size: 2em;
+    }
+
+    .evre-header {
+        font-size: 1.5em;
+    }
+    /* Bilgi metni boyutunu küçültüyoruz */
+    .info {
+        font-size: 1em;
+    }
+}
+
+/* Masaüstü Tasarımı */
+@media (min-width: 769px) {
+    /* Masaüstü cihazlarda container genişliği %70 olacak */
+    .container {
+        width: 70%;
+    }
+
+    /* Resimler 600px genişliğinde olacak */
+    .evre {
+        max-width: 600px;
+    }
+
+    /* Başlık boyutunu masaüstü için büyütüyoruz */
+    h2 {
+        font-size: 2.5em;
+    }
+
+    .evre-header {
+        font-size: 1.8em;
+    }
+}

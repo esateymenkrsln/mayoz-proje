@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayoz Bölünmeleri</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <!-- Kar Yağdırması -->
+    <script src="https://cdn.elinsoft.com/kar.js" type="text/javascript"></script>
+
+        <!-- Kişisel Bilgiler -->
+        <section id="personal-info">
+            <h2>Kişisel Bilgiler</h2>
+            <p><strong>Adım:</strong> Esat Eymen Karaaslan</p>
+            <p><strong>Sınıfım:</strong> 10 L</p>
+            <p><strong>Okul Numarası:</strong> 1822</p>
+            <p><strong>Okulum:</strong> Şair Abay Konanbay Anadolu Lisesi</p>
+            <p><strong>Öğretmenim:</strong> Samime Bayar</p>
+        </section>
+
+ <!-- Müzik Eklenmesi --> 
+ <audio controls autoplay loop>
+    <source src="../ekdosyalar/cavresamin.mp3">
+ </audio
+<div class="container">
+    
+        <!-- Projenin Amacı -->
+        <section id="project-purpose">
+            <h2>Projenin Amacı</h2>
+            <p>Bu proje, Mayoz 1 ve Mayoz 2 bölünmelerinin evrelerini detaylı bir şekilde açıklayarak biyoloji öğrencilerinin bu konuyu daha iyi anlamalarını sağlamayı amaçlamaktadır. Mayoz bölünmesi, genetik çeşitliliği artıran önemli bir biyolojik süreçtir ve bu projenin amacı, bu sürecin her bir aşamasını daha anlaşılır ve etkileşimli bir şekilde sunmaktır.</p>
+        </section>
+        <!-- Mayoz Bölünmeleri Butonu -->
+        <section id="mayoz-button">
+            <button class="btn-main" onclick="showMayoz()">Mayoz Bölünmeleri</button>
+        </section>
+
+        <!-- Mayoz Bölünmesi Sayfası -->
+        <section id="mayoz-sections" style="display:none;">
+            <!-- Mayoz Bölünmesi Anlatımı -->
+            <section id="mayoz-info">
+                <h2>Mayoz Bölünmesi Nedir?</h2>
+                <p>Mayoz, üreme hücrelerinin (yumurta ve sperm) oluştuğu, iki aşamadan oluşan bir hücre bölünmesidir. Bu bölünme sırasında, kromozom sayısı yarıya iner ve genetik çeşitlilik artar. Mayoz bölünmesi, genetik materyalin doğru bir şekilde dağılmasını sağlayarak, yavruların ebeveynlerinden farklı genetik özelliklere sahip olmasına imkan tanır.</p>
+
+                <h3>Mayoz Bölünmesinin Temel Özellikleri</h3>
+                <ul>
+                    <li><strong>Kromozom Sayısının Yarıya İnmesi:</strong> Mayoz sırasında, hücredeki kromozom sayısı yarıya iner. Bu, üreme hücrelerinin (gametler) oluşumunu sağlar.</li>
+                    <li><strong>Genetik Çeşitlilik:</strong> Mayoz, genetik çeşitliliği artırır. Kromozomlar, birbirleriyle genetik materyal alışverişi yaparak yeni kombinasyonlar oluşturur.</li>
+                    <li><strong>Homolog Kromozomlar:</strong> Mayozda, homolog kromozomlar (aynı türde, aynı özellikleri taşıyan kromozom çiftleri) eşleşir ve ayrılır. Bu süreç, genetik çeşitliliği artırır.</li>
+                </ul>
+                <p>Mayoz bölünmesi, genetik çeşitliliğin temel kaynağıdır ve üreme için gereklidir. Bu süreçte, her bir gamet (yumurta veya sperm), bir ebeveynin genetik bilgisinin yarısını taşır, böylece yeni bir birey oluştuğunda ebeveynlerin genetik bilgileri birleşir.</p>
+            </section>
+
+            <!-- Mayoz 1 Evreleri -->
+            <div id="mayoz1">
+                <h2 class="evre-header">Mayoz 1 Evreleri</h2>
+                <div class="evre" onclick="showEvreInfo('Profaz 1')">
+                    <img src="./ekdosyalar/profaz1.png" alt="Profaz 1">
+                    <p>Profaz 1</p>
+                </div>
+                <div class="evre" onclick="showEvreInfo('Metafaz 1')">
+                    <img src="./ekdosyalar/metafaz1.png" alt="Metafaz 1">
+                    <p>Metafaz 1</p>
+                </div>
+                <div class="evre" onclick="showEvreInfo('Anafaz 1')">
+                    <img src="./ekdosyalar/anafaz1.png" alt="Anafaz 1">
+                    <p>Anafaz 1</p>
+                </div>
+                <div class="evre" onclick="showEvreInfo('Telofaz 1')">
+                    <img src="./ekdosyalar/telofaz1.png" alt="Telofaz 1">
+                    <p>Telofaz 1</p>
+                </div>
+                <p id="mayoz1-info" class="info"></p>
+            </div>
+
+            <!-- Mayoz 2 Evreleri -->
+            <div id="mayoz2">
+                <h2 class="evre-header">Mayoz 2 Evreleri</h2>
+                <div class="evre" onclick="showEvreInfo('Profaz 2')">
+                    <img src="./ekdosyalar/profaz2.png" alt="Profaz 2">
+                    <p>Profaz 2</p>
+                </div>
+                <div class="evre" onclick="showEvreInfo('Metafaz 2')">
+                    <img src="./ekdosyalar/metafaz2.png" alt="Metafaz 2">
+                    <p>Metafaz 2</p>
+                </div>
+                <div class="evre" onclick="showEvreInfo('Anafaz 2')">
+                    <img src="./ekdosyalar/anafaz2.png" alt="Anafaz 2">
+                    <p>Anafaz 2</p>
+                </div>
+                <div class="evre" onclick="showEvreInfo('Telofaz 2')">
+                    <img src="./ekdosyalar/telofaz2.png" alt="Telofaz 2">
+                    <p>Telofaz 2</p>
+                </div>
+                <p id="mayoz2-info" class="info"></p>
+            </div>
+
+            <!-- Ana Sayfaya Dön Butonu -->
+            <button class="btn-main" onclick="goBackToHome()">Ana Sayfaya Dön</button>
+        </section>
+    </div>
+
+    <script src="scripts/script.js"></script>
+
+    <!--Footer Bölümü-->
+
+      <style>
+
+        </style>
+
+        <div class="footer bg-dark">
+          <p>&copy; Developed by Esat Eymen Karaaslan</p>
+        </div>
+    
+</body>
+</html>
